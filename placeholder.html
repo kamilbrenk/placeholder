@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles/placeholder.css">
+        <!--[if IE]><link rel="stylesheet" href="styles/placeholder_ie.css"><![endif]-->
+
+		<title>Custom HTML5 Placeholder</title>
+	</head>
+	<body class="no-js">
+		<script>
+            document.body.className = document.body.className.replace('no-js', 'js');
+        </script>
+
+		<p class="field">
+			<label for="firstname" class="placeholder">First Name</label>
+			<input type="text" name="firstname" id="firstname">
+		</p>
+
+		<p class="field">
+			<label for="lastname" class="placeholder placeholder-zoom"><u>Last</u> Name</label>
+			<input type="text" name="lastname" id="lastname">
+		</p>
+
+		<p class="field">
+			<label for="password" class="placeholder">Password</label>
+			<input type="password" name="password" id="password">
+		</p>
+
+		<p class="field field-textarea">
+			<label for="about" class="placeholder placeholder-textarea">About<br><br>you</label>
+			<textarea name="about" id="about" rows="4"></textarea>
+		</p>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/placeholder.js"></script>
+    <script>
+		jQuery('.placeholder').placeholder();
+	</script>
+</body>
+</html>
